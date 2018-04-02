@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SE-UOK</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+div.gallery {
+    margin: 5px;
+   
+    float: left;
+    width: 360px;
+}
+
+div.gallery:hover {
+    
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;	
+}
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+ a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ a:hover {
+    color: 	white;
+}
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+/* Style the header */
+.header {
+  grid-area: header;
+  background-image: url(5-cool-backgrounds_0001_bg2.jpg);
+  padding: 30px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+}
+h3{
+  text-align: center; 
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header header header header header header' 
+  'left middle middle middle middle right' 
+  'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 200px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+    'header header header header header header' 
+    'left left left left left left' 
+    'middle middle middle middle middle middle' 
+    'right right right right right right' 
+    'footer footer footer footer footer footer';
+}
+
+
+</style>
+</head>
+<body>
+<img src="img_flowers.jpg" alt="Paris">
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li ><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+
+<div class="grid-container">
+  <div class="header">
+    <p style="margin-top: 0px;margin-bottom: 0px;margin-right: 50px;margin-left: 50px;">This is the first ever Software Engineering degree in Sri Lanka to be offered for a batch of fifty students directly through UGC selection catering to a long felt need for software industry in Sri Lanka.
+If you are a physical science student , you are eligible to apply for this degree program.
+This degree program will help you to gain core software engineering knowledge and skills during the first two years of the program. The students can then specialize in the application areas of<br/><br/>
+**Net-centric applications<br/>
+**Mobile computing<br/>
+**Business intelligent systems<br/>
+**Health informatics<br/>
+**Digital games and animations<br/>
+**Business engineering.<br/><br/>
+Join the B.Sc. in Software Engineering degree program offered by the University of Kelaniya and become a very much sought after professional software engineer in the global software industry
+</p>
+  </div>
+  <div class="left" style="background-color:#191919;"><div style="background-color:DodgerBlue;width:100%; height:30px;" width:100%><h3 >Upcoming Events</h3></div>
+<div style="background-color:#40A1FF;width:100%; height:90%;" width:100%><br/><br/><a href="default.asp"><p  style="text-align: left;">Workshop on GSoC and Coding best practices</p></a><br/><p style="text-align: right;">- April 21st, 2018</p>  
+<br/><br/><a href="default.asp"><p  style="text-align: left;">MS Champs Monthly Meeting</p></a><br/><p style="text-align: right;">- May 5th, 2018</p> 
+</div>
+
+</div>
+  
+
+
+
+
+<div class="middle" style="background-color:#262626;"><h4 style="color:#FFD0C8">Have you ever think of, how to teach your child to behave in the society? how to cross the road? to buy things in a shop? 
+We have a gamified solution.
+
+Watch our undergraduates' newly created game => X KID
+
+<a href="default.asp">#SE_UOK #gamification #unity #SE_GAMES #SL_GAMES</a></h4>
+
+<div class="gallery">
+  <a target="_blank" href="fjords.jpg">
+    <img src="1.png" alt="Fjords" width="300" height="200">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="forest.jpg">
+    <img src="2.png" alt="Forest" width="300" height="200">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="lights.jpg">
+    <img src="3.png" alt="Northern Lights" width="300" height="200">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="mountains.jpg">
+    <img src="4.png" alt="Mountains" width="300" height="200">
+  </a>
+  <div class="desc"></div>
+</div>
+
+
+
+</div>  
+
+
+
+
+  <div class="right" style="background-color:#191919;"><div style="background-color:Tomato;width:100%; height:30px;" width:100%><h3  >Notices</h3></div>
+<div style="background-color:#FF7A63;width:100%; height:90%;" width:100%> <br/><br/><a href="default.asp"><p style="text-align: left;">Aptitude tests for University admissions for academic year 2017/2018 are postponed</p></a><br/><p style="text-align: right;">- March 21st, 2018</p>     
+<br/><br/><a href="default.asp"><p style="text-align: left;">Special notice for students</p></a><br/><p style="text-align: right;">- March 8th, 2018</p> 
+<br/><br/><a href="default.asp"><p style="text-align: left;">Vacancies – University of Kelaniya</p></a><br/><p style="text-align: right;">- February 27th, 2018</p> 
+</div>
+
+
+</div>
+
+
+  <div class="footer" style="background-color:#bbb;">
+    <div style="float: left; width:50%;"><p>CONTACT US</p><hr/ style="width:50%;"><br/><p style="text-align: left;margin-left: 30%">
+University of Kelaniya,<br/>
+Kelaniya 11600,<br/>
+Sri Lanka.<br/>
+Tel : +94 112903903, <br/>
+Fax: +94 11 2913857<br/>
+Email: info@kln.ac.lk<br/>
+Map | How to Find us<br/>
+<br/><br/>
+A-Z Departments List<br/>
+A-Z Site index<br/>
+
+</p></div><div style="float: left;width:50%;"><p>STAY CONNECTED WITH US</p><hr/ style="width:50%;"><br/>
+<img src="facebook.png" alt="Paris" style="width:30px; height:30px;float:left;">
+<img src="google.png" alt="Paris" style="width:30px; height:30px;float:left;">
+<img src="twitter.png" alt="Paris" style="width:30px; height:30px;float:left;">
+<img src="youtube.png" alt="Paris" style="width:30px; height:30px; float:left;">
+<p style="text-align: left;margin-left: 30%;">
+facebooklinkedintwittergoogleyoutuberss<br/>
+Subscribe to email notifications<br/>
+Web Policy - University of Kelaniya</p></div>
+  </div>
+</div>
+
+</body>
+</html>
